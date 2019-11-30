@@ -1,0 +1,32 @@
+@import '../../variables.scss';
+
+.meal-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 25%;
+    min-width: 17rem;
+    // height: 4rem;
+    height: 100%;
+    border: 2px solid $main-color;
+    background-color: #fff;
+    text-align: center;
+    align-self: center;
+    border-radius: 1.25rem;
+    font-size: 1.55rem;
+    background-color: $main-color;
+    cursor: pointer;
+    text-transform: capitalize;
+    margin: 2rem 0;
+
+    h2 {
+        margin: auto;
+        color: white;
+    }
+
+    p {
+        color: white;
+        margin: 0.25rem 0;
+    }
+}

@@ -1,0 +1,33 @@
+@import '../variables.scss';
+
+.date-tracker {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 4rem 0 0 0;
+
+    .date-tracker-header {
+        width: 100%;
+        height: 5rem;
+        border-bottom: 1px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+            h2 {
+                font-size: 2rem;
+                color: $main_color;
+            }
+
+            i {
+                font-size: 3rem;
+                color: $main_color;
+                cursor: pointer;
+
+                &::selection {
+                    background-color: transparent;
+                }
+            }
+    }
+
+}

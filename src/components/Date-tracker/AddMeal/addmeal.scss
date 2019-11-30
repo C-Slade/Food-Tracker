@@ -1,0 +1,16 @@
+@import '../../variables.scss';
+
+.addMeal {
+    width: 25%;
+    min-width: 17rem;
+    height: 4rem;
+    border: 2px solid $main-color;
+    background-color: #fff;
+    text-align: center;
+    align-self: center;
+    border-radius: 1.25rem;
+    font-size: 2.55rem;
+    color: $main-color;
+    cursor: pointer;
+    text-transform: capitalize;
+}

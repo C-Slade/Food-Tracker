@@ -1,0 +1,39 @@
+@import '../../variables.scss';
+
+.tracker-list-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    color: $main_color;
+    margin: 1rem 0;
+    border-bottom: 1px solid black;
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    .tracker-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 2rem 0;
+
+        div {
+            width: 70%;
+            max-width: 25rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 2.55rem;
+            align-self: center;
+
+            @media screen and (max-width: 500px) {
+                font-size: 1.45rem
+            }
+        }
+    }
+
+}

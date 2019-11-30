@@ -1,0 +1,115 @@
+@import '../../variables.scss';
+.rs-menu {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    position: fixed;
+    z-index: 10;
+}
+.menu {
+    position: fixed;
+    top: 4rem;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: $main_color;
+    z-index: 10;
+    transition: all ease-in-out 0.3s;
+    transform-origin: right;
+    margin-right: 0;
+
+
+    ul {
+        margin: 3rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        list-style-type: none;
+        align-items: center;
+        text-align: center;
+
+        .rs-changeNutrients {
+            width: 70%;
+            margin: 1rem 0;
+            max-width: 30rem;
+
+            .inputError {
+                border-radius: 0.25rem;
+                color: rgb(219, 63, 63);
+                display: flex;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+
+                p {
+                    // text-decoration: underline;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .change-global-nutrients {
+            align-items: center;
+
+            input {
+                width: 100%;
+                margin: 0.45rem 0;
+                height: 2rem;
+                text-align: center;
+                font-size: 1.5rem;
+                border: none;
+                border-bottom: 2px solid white;
+                background-color: transparent;
+                color: white;
+                font-weight: 900;
+                border-radius: 0;
+
+                &::placeholder {
+                    color: rgba(255, 255, 255, 0.486);
+                }
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            .CGN-submit {
+                width: 50%;
+                border: 2px solid white;
+                margin: 2rem 0;
+                text-align: center;
+                border-radius: .25rem;
+                height: 100%;
+                cursor: pointer;
+                transition: all ease-in-out 0.3s;
+
+                &:hover {
+                    background-color: white;
+                    color: $main_color;
+                }
+            }
+        }
+
+        li {
+            font-size: 3rem;
+            color: white;
+            transition: all ease-in-out 0.3s;
+            cursor: pointer;
+            margin: 2rem 0;
+
+            &:hover {
+                transform: scale(1.05);
+                text-decoration: underline;
+            }
+
+            @media screen and (max-width: 500px) {
+                font-size: 1.65rem;
+
+                &:hover {
+                    transform: none;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
